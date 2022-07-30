@@ -1,11 +1,11 @@
 import React from "react";
 /* Sample
     {
-        ProjectName: "Photo Gallary",
-        ProjectDescription: "Portfolio site for my friend Lyza, built using React. ",
-        ProjectIamge: "photo-gallary.jpg",
-        ProjectDeployedApplicationUrl:"https://majdyjamal.github.io/photo-port/",
-        ProjectGithubRepoUrl: "https://github.com/majdyjamal/photo-port"
+        projectName: "Photo Gallary",
+        projectDescription: "Portfolio site for my friend Lyza, built using React. ",
+        projectIamge: "photo-gallary.jpg",
+        projectDeployedApplicationUrl:"https://majdyjamal.github.io/photo-port/",
+        projectGithubRepoUrl: "https://github.com/majdyjamal/photo-port"
     },
 */
 const Project = (props) => {

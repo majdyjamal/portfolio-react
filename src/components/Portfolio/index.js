@@ -4,51 +4,54 @@ import Project from "../Project";
 const myProjects = [
     {
         projectName: "Photo Gallary",
-        projectDescription: "Portfolio site for my friend Lyza, built using React. ",
+        projectDescription: "Portfolio site for my friend Lyza, built using React. Both links should work correctly. ",
         projectIamge: "photo-gallary.jpg",
         projectDeployedApplicationUrl:"https://majdyjamal.github.io/photo-port/",
         projectGithubRepoUrl: "https://github.com/majdyjamal/photo-port"
     },
     {
-        projectName: "",
-        projectDescription: "",
+        projectName: "Demo Project",
+        projectDescription: "Another site that I have created using React, this is just a place holder only. The links goes to my GitHub account.",
         projectIamge: "",
-        projectDeployedApplicationUrl:"",
-        projectGithubRepoUrl: ""
+        projectDeployedApplicationUrl:"https://github.com/majdyjamal",
+        projectGithubRepoUrl: "https://github.com/majdyjamal"
     },
     {
-        projectName: "",
-        projectDescription: "",
+        projectName: "Test Project",
+        projectDescription: "Another site that I have created using React, this is just a place holder only. The links goes to my GitHub account.",
         projectIamge: "",
-        projectDeployedApplicationUrl:"",
-        projectGithubRepoUrl: ""
+        projectDeployedApplicationUrl:"https://github.com/majdyjamal",
+        projectGithubRepoUrl: "https://github.com/majdyjamal"
     },
     {
-        projectName: "",
-        projectDescription: "",
+        projectName: "Html and CSS Project",
+        projectDescription: "Another site that I have created using React, this is just a place holder only. The links goes to my GitHub account.",
         projectIamge: "",
-        projectDeployedApplicationUrl:"",
-        projectGithubRepoUrl: ""
+        projectDeployedApplicationUrl:"https://github.com/majdyjamal",
+        projectGithubRepoUrl: "https://github.com/majdyjamal"
     },
     {
-        projectName: "",
-        projectDescription: "",
+        projectName: "Node.JS API Project",
+        projectDescription: "Another site that I have created using React, this is just a place holder only. The links goes to my GitHub account.",
         projectIamge: "",
-        projectDeployedApplicationUrl:"",
-        projectGithubRepoUrl: ""
+        projectDeployedApplicationUrl:"https://github.com/majdyjamal",
+        projectGithubRepoUrl: "https://github.com/majdyjamal"
     },
     {
-        projectName: "",
-        projectDescription: "",
+        projectName: "The Final Project",
+        projectDescription: "Another site that I have created using React, this is just a place holder only. The links goes to my GitHub account.",
         projectIamge: "",
-        projectDeployedApplicationUrl:"",
-        projectGithubRepoUrl: ""
+        projectDeployedApplicationUrl:"https://github.com/majdyjamal",
+        projectGithubRepoUrl: "https://github.com/majdyjamal"
     },
 ]
 const Portfolio = () => {
     return (
-        <section className="row">
-            {myProjects.map((project,index) => (<Project key={`project${index}`} project={project}/>))}
+        <section className="container">
+            <h1  className="row" id="Portfolio">Portfolio</h1>
+            <div className="row">
+                {myProjects.map((project,index) => (<Project key={`project${index}`} project={project}/>))}
+            </div>
         </section>
     );
 }
