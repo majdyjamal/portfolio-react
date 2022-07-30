@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import AboutMe from './components/AboutMe';
+import Project from './components/Project';
 
 function App() {
   return (
@@ -28,7 +29,13 @@ function App() {
 
       <main>
           This is the main section
+          <pre>
+            WHEN I load the portfolio the first time 
+            THEN the About Me title and section are selected by default
+          </pre>
+          
           <AboutMe></AboutMe>
+          <Project></Project>
       </main>
       <footer>
         This is footer 
