@@ -16,14 +16,16 @@ const Project = (props) => {
         projectDeployedApplicationUrl,
         projectGithubRepoUrl
     } = props.project;
+    
     const defaultProjectIamge ="default-project-image.png";
-console.log(projectIamge);
+
     return (
-        <div className="card" style= {{width: 18 +'rem'}}> 
+        <div className="card m-3" style= {{width: 20 +'rem'}}> 
            {/* rem stands for “root em”, a unit of measurement that represents the font size of the root element */}
                 {projectIamge 
-                    ? <img className="card-img-top" src={require(`../../assets/images/${projectIamge}`)} alt={projectName}/> 
-                    : <img className="card-img-top" src={require(`../../assets/images/${defaultProjectIamge}`)} alt={projectName}/>}
+                    ? (<img className="card-img-top" src={require(`../../assets/images/${projectIamge}`)} alt={projectName}/>) 
+                    : (<img className="card-img-top" src={require(`../../assets/images/${defaultProjectIamge}`)} alt={projectName}/>)
+                }
                 <div className="card-body">
                     <h5 className="card-title">{projectName}</h5>
                     <p className="card-text">{projectDescription}</p>

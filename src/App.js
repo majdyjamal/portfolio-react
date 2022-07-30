@@ -4,10 +4,11 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App w-100">
       
       <Header>
         <Nav></Nav>
@@ -33,7 +34,7 @@ function App() {
             WHEN I load the portfolio the first time 
             THEN the About Me title and section are selected by default
           </pre>
-          
+          <Contact></Contact>
           <AboutMe></AboutMe>
           <Portfolio></Portfolio>
       </main>
