@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             WHEN I load the portfolio the first time 
             THEN the About Me title and section are selected by default
           </pre>
+          <Resume></Resume>
           <Contact></Contact>
           <AboutMe></AboutMe>
           <Portfolio></Portfolio>
