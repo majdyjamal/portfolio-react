@@ -1,22 +1,38 @@
 import React from "react";
-import profileImage from "../../assets/images/majdy-jamal.jpg";
-
-const Project = () => {
+/* Sample
+    {
+        ProjectName: "Photo Gallary",
+        ProjectDescription: "Portfolio site for my friend Lyza, built using React. ",
+        ProjectIamge: "photo-gallary.jpg",
+        ProjectDeployedApplicationUrl:"https://majdyjamal.github.io/photo-port/",
+        ProjectGithubRepoUrl: "https://github.com/majdyjamal/photo-port"
+    },
+*/
+const Project = (props) => {
+    const {
+        projectName, 
+        projectDescription,
+        projectIamge,
+        projectDeployedApplicationUrl,
+        projectGithubRepoUrl
+    } = props.project;
+    const defaultProjectIamge ="default-project-image.png";
+console.log(projectIamge);
     return (
-        <section className="container">
+        <div className="card" style= {{width: 18 +'rem'}}> 
            {/* rem stands for “root em”, a unit of measurement that represents the font size of the root element */}
-           <div className="card" style= {{width: 18 +'rem'}}> 
-                <img className="card-img-top" src={profileImage} alt="Project Card image cap" />
+                {projectIamge 
+                    ? <img className="card-img-top" src={require(`../../assets/images/${projectIamge}`)} alt={projectName}/> 
+                    : <img className="card-img-top" src={require(`../../assets/images/${defaultProjectIamge}`)} alt={projectName}/>}
                 <div className="card-body">
-                    <h5 className="card-title">Project 1</h5>
-                    <p className="card-text">Project 1 ........Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 className="card-title">{projectName}</h5>
+                    <p className="card-text">{projectDescription}</p>
                     <div className="card-body">
-                        <a href="#" className="card-link">Application</a>
-                        <a href="#" className="card-link">GitHub</a>
+                        <a href={projectDeployedApplicationUrl} className="card-link">Application</a>
+                        <a href={projectGithubRepoUrl} className="card-link">GitHub</a>
                     </div>
                 </div>
             </div>
-        </section>
     );
 }
 

@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import AboutMe from './components/AboutMe';
-import Project from './components/Project';
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
           </pre>
           
           <AboutMe></AboutMe>
-          <Project></Project>
+          <Portfolio></Portfolio>
       </main>
       <footer>
         This is footer 
