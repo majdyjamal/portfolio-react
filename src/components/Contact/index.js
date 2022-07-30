@@ -26,7 +26,7 @@ const Contact = () => {
     };
 
     const handleChange = (e) => {
-        if (e.target.name === 'email') {
+        if (e.target.name === 'emailAddress') {
             const isValid = validateEmail(e.target.value);
             if (!isValid) {
                 setValidationError('Invalid Email Address.');
@@ -48,7 +48,6 @@ const Contact = () => {
 
     return (
         <section className="container">
-            <h1 className="row" id="Contact">Contact</h1>
             <div>
                 <form id="contact-form" onSubmit={handleSubmit}>
                     <div className="row">
@@ -65,7 +64,7 @@ const Contact = () => {
                     </div>
 
                     {validationError &&
-                        (<div class="alert alert-danger mt-3" role="alert">{validationError}</div>)}
+                        (<div className="alert alert-danger mt-3" role="alert">{validationError}</div>)}
                     
                     <div className="row">
                         <button className="col mt-3" type="Submit">Send 📩</button>

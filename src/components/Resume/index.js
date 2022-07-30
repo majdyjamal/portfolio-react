@@ -3,7 +3,6 @@ import React from "react";
 const Resume = () => {
     return (
         <section className="container">
-            <h1 className="row" id="Resume">Resume</h1>
             <div className="row">
                 <div className="my-2">
                     <p>Download my <a href="https://au.linkedin.com/in/majdy-jamal-b3624410">resume.</a></p>

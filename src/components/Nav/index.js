@@ -16,15 +16,16 @@ const Nav = (props) => {
    
     return (
         <nav className="container">
-            <ul className="row">
+            <ul className="row ">
                 { pages.map((page) => {
                     return (
-                        <li className="col" key={page.name} >
+                        <li className="col-12 col-xs-6 col-sm-3" key={page.name}>
                             <span  
                                 data-section-name={page.name} 
                                 data-section-text={page.text} 
                                 onClick={handleClickEvent}
-                                className={` ${page.name === currentSectionState.name && "navActive"}`}>
+                                className={` ${page.name === currentSectionState.name && "navActive"}`}
+                                style={{left: 5}}>
                                     {page.text}
                             </span>
                         </li>

@@ -9,7 +9,7 @@ nav li {
   cursor: pointer;
   text-shadow: 3px 3px 6px rgba(195, 5, 5, 0.483);
   font-weight: 500;
-  margin: 0 50px;
+  margin: 0 0px;
 }
 
 .navActive {

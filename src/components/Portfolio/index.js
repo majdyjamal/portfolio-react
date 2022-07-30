@@ -49,7 +49,6 @@ const Portfolio = () => {
 
     return (
         <section className="container">
-            <h1  className="row" id="Portfolio">Portfolio</h1>
             <div className="row">
                 {myProjects.map((project,index) => (<Project key={`project${index}`} project={project}/>))}
             </div>
