@@ -2,6 +2,7 @@
 import './App.css';
 import Header from './components/Header';
 import Nav from './components/Nav';
+import AboutMe from './components/AboutMe';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
 
       <main>
           This is the main section
+          <AboutMe></AboutMe>
       </main>
       <footer>
         This is footer 
