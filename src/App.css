@@ -1,9 +1,21 @@
 :root {
+  --primary: #8c54ff;
   --secondary: #31343D;
+  --tertiary: #b12704;
 }
 
 nav li {
   list-style: none;
+  cursor: pointer;
+  text-shadow: 3px 3px 6px rgba(195, 5, 5, 0.483);
+  font-weight: 500;
+  margin: 0 50px;
+}
+
+.navActive {
+  color: var(--tertiary);
+  cursor: default;
+  text-shadow: 3px 3px 15px rgba(255,255,255, .5);
 }
 
 

@@ -1,23 +1,36 @@
 import React from "react";
 
-const Nav = () => {
+const Nav = (props) => {
+    const {
+        pages,
+        currentSectionState,
+        setCurrentSectionState
+    } = props; 
+
+    const handleClickEvent = (e) => {
+        setCurrentSectionState({
+            name: e.target.getAttribute('data-section-name'),
+            text: e.target.getAttribute('data-section-text')
+        });
+    }
+   
     return (
         <nav className="container">
             <ul className="row">
-                <li className="col"><span>About Me</span></li>
-                <li className="col"><span>Portfolio</span></li>
-                <li className="col"><span>Contact</span></li>
-                <li className="col"><span>Resume</span></li>
+                { pages.map((page) => {
+                    return (
+                        <li className="col" key={page.name} >
+                            <span  
+                                data-section-name={page.name} 
+                                data-section-text={page.text} 
+                                onClick={handleClickEvent}
+                                className={` ${page.name === currentSectionState.name && "navActive"}`}>
+                                    {page.text}
+                            </span>
+                        </li>
+                    );
+                })}
             </ul>
-
-            <p className="row">The title corresponding to the current section is highlighted.
-
-                WHEN I click on a navigation title
-                THEN I am presented with the corresponding section below the navigation
-                without the page reloading
-
-                and that title is highlighted
-            </p>
         </nav>
     );
 }

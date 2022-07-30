@@ -1,4 +1,4 @@
-//import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Nav from './components/Nav';
@@ -9,41 +9,58 @@ import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 function App() {
+  const [pages] = useState([
+    {
+      name: "AboutMe",
+      text: "About Me"
+    },
+    {
+      name: "Portfolio",
+      text: "Portfolio"
+    },
+    {
+      name: "Contact",
+      text: "Contact"
+    },
+    {
+      name: "Resume",
+      text: "Resume"
+    },
+  ]);
+
+  const [currentSectionState, setCurrentSectionState] = useState(pages[0]); // About Me
+
+  const renderActiveSection = () => {
+    switch (currentSectionState.name) {
+      case "AboutMe":
+        return <AboutMe></AboutMe>;
+      case "Portfolio":
+        return <Portfolio></Portfolio>;
+      case "Contact":
+        return <Contact></Contact>;
+      case "Resume":
+        return <Resume></Resume>;
+      default:
+        return <AboutMe></AboutMe>;
+    };
+  }
+
   return (
-    <div className="App w-100">
-      
+    <div className="App">
       <Header>
-        <Nav></Nav>
+        <Nav
+          pages={pages}
+          currentSectionState={currentSectionState}
+          setCurrentSectionState={setCurrentSectionState}>
+        </Nav>
       </Header>
-
-
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-
       <main>
-          This is the main section
-          <pre>
-            WHEN I load the portfolio the first time 
-            THEN the About Me title and section are selected by default
-          </pre>
-          <Resume></Resume>
-          <Contact></Contact>
-          <AboutMe></AboutMe>
-          <Portfolio></Portfolio>
+        <h1  className="my-5 mx-3">{currentSectionState.text}</h1>
+        {renderActiveSection()}
       </main>
       <Footer></Footer>
 
-  </div>
+    </div>
 
   );
 }

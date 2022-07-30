@@ -65,7 +65,7 @@ const Contact = () => {
                     </div>
 
                     {validationError &&
-                        (<div class="alert alert-danger" role="alert">{validationError}</div>)}
+                        (<div class="alert alert-danger mt-3" role="alert">{validationError}</div>)}
                     
                     <div className="row">
                         <button className="col mt-3" type="Submit">Send 📩</button>
