@@ -5,7 +5,7 @@ const Resume = () => {
         <section className="container">
             <div className="row">
                 <div className="my-2">
-                    <p>Download my <a href="https://au.linkedin.com/in/majdy-jamal-b3624410">resume.</a></p>
+                    <p>Download my <a href="https://au.linkedin.com/in/majdy-jamal-b3624410" target="_blank">resume.</a></p>
                     <h3>Front-end</h3>
                     <ul>
                         <li>HTML</li>

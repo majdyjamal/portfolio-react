@@ -55,7 +55,7 @@ function App() {
         </Nav>
       </Header>
       <main>
-        <h1  className="my-5 mx-3">{currentSectionState.text}</h1>
+        <h1  className="container">{currentSectionState.text}</h1>
         {renderActiveSection()}
       </main>
       <Footer></Footer>
