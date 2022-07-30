@@ -6,6 +6,7 @@ import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -40,13 +41,8 @@ function App() {
           <AboutMe></AboutMe>
           <Portfolio></Portfolio>
       </main>
-      <footer>
-        This is footer 
-          {/* text or icon links to the developer’s
-           GitHub and
-           LinkedIn profiles
-           , and their profile on a third platform (Stack Overflow, Twitter)  */}
-      </footer>
+      <Footer></Footer>
+
   </div>
 
   );
