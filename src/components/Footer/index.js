@@ -10,7 +10,7 @@ const Footer = () => {
                 <a className="col-1" href="https://au.linkedin.com/in/majdy-jamal-b3624410" target="_blank" rel="noopener noreferrer">
                     <i className="fa-brands fa-linkedin"></i>
                 </a>
-                {/* This is not real profile */}
+                {/* This is not a real profile */}
                 <a className="col-1" href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer">
                     <i className="fa-brands fa-twitter"></i>
                 </a>
@@ -20,4 +20,3 @@ const Footer = () => {
 }
 
 export default Footer;
-

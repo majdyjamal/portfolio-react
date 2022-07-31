@@ -1,12 +1,10 @@
 :root {
-  --primary: #8c54ff;
-  --secondary: #31343D;
-  --tertiary: #b12704;
   /* CSS HEX */
   --space-cadet: #2b2d42ff;
   --manatee: rgb(176, 185, 201);
   --cultured: #edf2f4ff;
   --amaranth-red: #d90429ff;
+  --secondary: #31343D;
 }
 
 header {
@@ -40,7 +38,6 @@ nav li {
   color: var(--amaranth-red);
   text-shadow: 1px 1px 0px var(--cultured);
 }
-
 
 footer {
   font-size: 48px;

@@ -1,13 +1,5 @@
 import React from "react";
-/* Sample
-    {
-        projectName: "Photo Gallary",
-        projectDescription: "Portfolio site for my friend Lyza, built using React. ",
-        projectIamge: "photo-gallary.jpg",
-        projectDeployedApplicationUrl:"https://majdyjamal.github.io/photo-port/",
-        projectGithubRepoUrl: "https://github.com/majdyjamal/photo-port"
-    },
-*/
+
 const Project = (props) => {
     const {
         projectName, 
@@ -20,8 +12,7 @@ const Project = (props) => {
     const defaultProjectIamge ="default-project-image.png";
 
     return (
-        <div className="card m-3" style= {{width: 20 +'rem'}}> 
-           {/* rem stands for “root em”, a unit of measurement that represents the font size of the root element */}
+        <div className="card m-3" style= {{width: 20 +'rem'}}> {/* rem stands for “root em”, a unit of measurement that represents the font size of the root element */}
                 {projectIamge 
                     ? (<img className="card-img-top" src={require(`../../assets/images/${projectIamge}`)} alt={projectName}/>) 
                     : (<img className="card-img-top" src={require(`../../assets/images/${defaultProjectIamge}`)} alt={projectName}/>)
@@ -39,5 +30,3 @@ const Project = (props) => {
 }
 
 export default Project;
-
-

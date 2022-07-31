@@ -15,7 +15,7 @@ const Nav = (props) => {
     }
 
     useEffect(() => {
-        document.title =  `${currentSectionState.text} - Majdy Jamal`;
+        document.title = `${currentSectionState.text} - Majdy Jamal`;
       }, [currentSectionState]);
     
    
