@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 const Nav = (props) => {
     const {
@@ -13,6 +13,11 @@ const Nav = (props) => {
             text: e.target.getAttribute('data-section-text')
         });
     }
+
+    useEffect(() => {
+        document.title =  `${currentSectionState.text} - Majdy Jamal`;
+      }, [currentSectionState]);
+    
    
     return (
         <nav className="container">

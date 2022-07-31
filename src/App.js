@@ -12,7 +12,7 @@ function App() {
   const [pages] = useState([
     {
       name: "AboutMe",
-      text: "About Me"
+      text: "About"
     },
     {
       name: "Portfolio",
@@ -55,7 +55,7 @@ function App() {
         </Nav>
       </Header>
       <main>
-        <h1  className="container">{currentSectionState.text}</h1>
+        <h2  className="container">{currentSectionState.text}</h2>
         {renderActiveSection()}
       </main>
       <Footer></Footer>

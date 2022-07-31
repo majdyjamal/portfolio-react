@@ -9,7 +9,11 @@ const Contact = () => {
 
     const { name, emailAddress, message } = formFieldsState;
 
-    const [validationError, setValidationError] = useState('');
+    const [validationError, setValidationError] = useState({
+        name: '',
+        emailAddress: '',
+        message: '',
+    });
 
     // https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in-javascript
     const validateEmail = (email) => {
@@ -18,31 +22,29 @@ const Contact = () => {
         );
     };
 
+    const getValidationErrorMessage = () => {
+        return ((validationError.name || '') + " " + (validationError.emailAddress || '') + " " +(validationError.message || '')).trim();
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!validationError) {
+        if (!validationError.name && !validationError.emailAddress && !validationError.message) {
             console.log('The following form fields were submitted:', formFieldsState);
         }
     };
 
     const handleChange = (e) => {
+        let isValid = true;
         if (e.target.name === 'emailAddress') {
-            const isValid = validateEmail(e.target.value);
-            if (!isValid) {
-                setValidationError('Invalid Email Address.');
-            } else {
-                setValidationError('');
-            }
+            isValid = validateEmail(e.target.value);
+            setValidationError( { ...validationError, [e.target.name]: (!isValid ? 'Invalid Email Address.': '')});
         } else {
-            if (!e.target.value.length) {
-                setValidationError(`${e.target.name} is required.`);
-            } else {
-                setValidationError('');
-            }
+            isValid = e.target.value && e.target.value.length > 0;
+            setValidationError( { ...validationError, [e.target.name]: (!isValid ? `${e.target.name} is required.`: '')});
         }
-        if (!validationError) {
+
+        if (isValid) {
             setFormFieldsState({ ...formFieldsState, [e.target.name]: e.target.value });
-            console.log('Updated the form state:', formFieldsState);
         }
     };
 
@@ -63,8 +65,8 @@ const Contact = () => {
                         <textarea name="message" rows="8" defaultValue={message} onBlur={handleChange} />
                     </div>
 
-                    {validationError &&
-                        (<div className="alert alert-danger mt-3" role="alert">{validationError}</div>)}
+                    {getValidationErrorMessage() &&
+                        (<div className="alert alert-danger mt-3" role="alert">{getValidationErrorMessage()}</div>)}
                     
                     <div className="row">
                         <button className="col mt-3" type="Submit">Send 📩</button>

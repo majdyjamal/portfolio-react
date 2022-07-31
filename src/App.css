@@ -2,20 +2,43 @@
   --primary: #8c54ff;
   --secondary: #31343D;
   --tertiary: #b12704;
+  /* CSS HEX */
+  --space-cadet: #2b2d42ff;
+  --manatee: rgb(176, 185, 201);
+  --cultured: #edf2f4ff;
+  --amaranth-red: #d90429ff;
+}
+
+header {
+ background-color: var(--space-cadet);
+}
+
+.App,main, footer {
+  background-color: var(--manatee);
+}
+
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  color: var(--cultured);
+}
+
+h2 {
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: bold;
 }
 
 nav li {
   list-style: none;
   cursor: pointer;
-  text-shadow: 3px 3px 6px rgba(195, 5, 5, 0.483);
-  font-weight: 500;
-  margin: 0 0px;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 1.5rem;
+  color: var(--cultured);
 }
 
 .navActive {
-  color: var(--tertiary);
   cursor: default;
-  text-shadow: 3px 3px 15px rgba(255,255,255, .5);
+  color: var(--amaranth-red);
+  text-shadow: 1px 1px 0px var(--cultured);
 }
 
 
@@ -32,4 +55,9 @@ footer a {
 
 footer a:hover {
   opacity: 1;
+}
+
+.profilePhoto {
+  width: 100%;
+  border-radius: 50%;
 }

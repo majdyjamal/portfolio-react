@@ -6,7 +6,7 @@ const AboutMe = () => {
         <section className="container">
             <div className="row">
                 <div className="col-12 col-md-4">
-                    <img src={profileImage} style={{ width: "100%" }} alt="Majdy Jamal photo"  />
+                    <img className="profilePhoto" src={profileImage} alt="Majdy Jamal"  />
                 </div>
                 <div className="col-12 col-md-8">
                     <p>Hi,<br/>My Name is Majdy Jamal, I am a senior software engineer and a Boot Camp Instructor for Adelaide University ...</p>
