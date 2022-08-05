@@ -1,16 +1,41 @@
-# React Portfolio
+# Majdy Jamal React Portfolio
 
-Simple single page Portfolio application built with React. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my Portfolio, this is a simple single page Portfolio application built with React.
+
+The  project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Deployed Application
+The application is deploued to GitHub Pages:
+
+URL: https://majdyjamal.github.io/portfolio-react/ (Links to an external site.) 
 
 ## Usage
 
 The application contains 4 different pages and a footer:
-- **About**: Read information about me.
-- **Portfolio**: List of my projects with links to the code and to the deployed application.
-- **Contact**: Use this form to contact me.
-- **Resume**: Read and download my Resume.
+
+### About
+Read information about me.
 
 ![alt text](src/assets/images/screen-shots.jpg)
+
+### Portfolio
+List of my projects with links to the code and to the deployed application.
+
+![alt text](src/assets/images/portfolio.jpg)
+
+### Contact
+Use this form to contact me.
+
+![alt text](src/assets/images/contact.jpg)
+
+### Resume
+Read and download my Resume.
+![alt text](src/assets/images/resume.jpg)
+
+### Footer
+Contains links to my socila media accounts.  
+![alt text](src/assets/images/footer.jpg)
+
 
 # User Story
 ```
