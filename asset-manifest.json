@@ -1,17 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio-react/static/css/main.4ff7ade4.css",
-    "main.js": "/portfolio-react/static/js/main.691ac69e.js",
+    "main.js": "/portfolio-react/static/js/main.78823c3e.js",
     "static/js/787.aeca62f9.chunk.js": "/portfolio-react/static/js/787.aeca62f9.chunk.js",
     "static/media/photo-gallary.jpg": "/portfolio-react/static/media/photo-gallary.a2d8f46bdaeb3fa00687.jpg",
     "static/media/majdy-jamal.jpg": "/portfolio-react/static/media/majdy-jamal.7654ab2f146af09610de.jpg",
+    "static/media/portfolio.jpg": "/portfolio-react/static/media/portfolio.410c9c71f24e805f2730.jpg",
+    "static/media/screen-shots.jpg": "/portfolio-react/static/media/screen-shots.6dfa2a2f5e6a69d1d888.jpg",
+    "static/media/contact.jpg": "/portfolio-react/static/media/contact.63b328bf7fbf250947c5.jpg",
+    "static/media/resume.jpg": "/portfolio-react/static/media/resume.684a6b54144e4e703f56.jpg",
     "index.html": "/portfolio-react/index.html",
     "main.4ff7ade4.css.map": "/portfolio-react/static/css/main.4ff7ade4.css.map",
-    "main.691ac69e.js.map": "/portfolio-react/static/js/main.691ac69e.js.map",
+    "main.78823c3e.js.map": "/portfolio-react/static/js/main.78823c3e.js.map",
     "787.aeca62f9.chunk.js.map": "/portfolio-react/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4ff7ade4.css",
-    "static/js/main.691ac69e.js"
+    "static/js/main.78823c3e.js"
   ]
 }
